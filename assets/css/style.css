@@ -1,0 +1,151 @@
+:root{
+    /* --primary-color: #eee;
+    --secondary-color: #ddd;
+    --third-color: #fff; */
+    --back-mobile:  #fdc82a;
+    --back-color: linear-gradient(135deg, #fdc82a, #ff6699);
+    /* --background-alternativo: ; */
+    --font-gral: 3vh;
+    --font-dos: 2vh;
+    --font-mini: 1vh;
+    --titulo: 8vh;
+}
+
+html, body{
+    width: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--back-mobile);
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+nav {
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+    
+    /* Ocultos parcialmente */
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: var(--font-dos);
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+    background: url('./static/images/background-texture.png') no-repeat center center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: var(--titulo);
+    text-shadow: 2px 2px 4px #000;
+}
+
+main {
+    padding: 20px;
+}
+
+#bio, #manifiesto, #tienda{
+    display: none;
+}
+
+.logo{
+    max-width: 20vw;
+}
+
+.container-tv {
+    position: relative;
+    width: 100%;
+    /* max-width: 600px; */
+    margin: 0 auto;
+}
+
+.tv-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* z-index: 2; */
+}
+
+.tv-video {
+    position: absolute;
+    top: 16%;
+    left: 28%;
+    width: 46%;
+    height: 46%;
+    border: none;
+    /* z-index: 1; */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+
+.tv-video {
+    position: absolute;
+    top: 16%;
+    left: 28%;
+    width: 46%;
+    height: 46%;
+    border: none;
+    box-shadow: 0px -1px 10px 20px rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+    border-radius: 20%;
+}
+
+.footer {
+    align-items: center;
+    background-color: var(--back-mobile);
+    display: flex;
+    height: 150px;
+    justify-content: center;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
+    margin: 0 15px;
+}
+
+.footer p {
+    margin-top: 10px;
+}
+
+
+
