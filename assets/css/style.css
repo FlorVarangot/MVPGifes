@@ -26,7 +26,7 @@ body {
     overflow-x: hidden;
 }
 
-nav {
+.nav-bar {
     color: white;
     padding: 10px;
     display: flex;
@@ -35,7 +35,7 @@ nav {
     flex-direction: column;
 }
 
-nav ul {
+.nav-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -43,14 +43,14 @@ nav ul {
     flex-wrap: wrap;
 }
 
-nav ul li {
+.nav-link {
     margin: 0 15px;
     
     /* Ocultos parcialmente */
     display: none;
 }
 
-a {
+.nav-link {
     text-decoration: none;
     font-weight: bold;
     font-size: var(--font-dos);
@@ -69,8 +69,10 @@ h1 {
     text-shadow: 2px 2px 4px #000;
 }
 
-main {
+.main{
     padding: 20px;
+    background-image: url(../images/fondoWeb.jpg);
+    background-size: cover;
 }
 
 #bio, #manifiesto, #tienda{
@@ -80,14 +82,20 @@ main {
 .logo{
     max-width: 20vw;
 }
+.section-ppal{
 
+    display: flex;
+    border-style: dotted;
+    border-color:blue;
+
+
+}
 .container-tv {
     position: relative;
     width: 100%;
     /* max-width: 600px; */
     margin: 0 auto;
 }
-
 .tv-image {
     width: 100%;
     height: auto;
