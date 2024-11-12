@@ -1,14 +1,14 @@
+
+
+/* Media Queries para tablet */
+@media screen and (max-width: 600px) {
+    /* Estilos para tablets y dispositivos más grandes */
+
+}
 /* Media Queries para tablet */
 @media screen and (min-width: 768px) {
     /* Estilos para tablets y dispositivos más grandes */
-    nav{
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    body{
-        background: var(--back-color);
-    }
 }
 /* Media Queries para laptop y pc */
 @media screen and (min-width: 1440px) {
@@ -16,13 +16,12 @@
         font-size:var(--font-gral);
     }
 
-    nav{
-        
-    }
 
     h1{
         font-size:var(--titulo);
     }
+
+
 
     /* #footer {
         flex-direction: column;

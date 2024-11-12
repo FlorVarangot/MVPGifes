@@ -38,24 +38,16 @@ body {
     justify-content: center;
     position: relative; /* Para posicionar elementos hijos */
 
-
-    /* Imagen de fondo */
-    background-image: url(/assets/images/web\ template\ Fondo.png);
-    background-size: cover;
-    /* Hace que la imagen cubra todo el contenedor */
-    background-position: center;
-    /* Centra la imagen */
-    
 }
 
-.superpuesta {
+/* .superpuesta {
     position: absolute;
     top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta la posición para centrar */
+   /*  left: 50%; Centra horizontalmente */
+   /* transform: translate(-50%, -50%);  Ajusta la posición para centrar */
     /* max-width: 50%;
-    max-height: 50%; */
-}
+    max-height: 50%; 
+} */
 
 .nav-bar {
     display: flex;
@@ -101,10 +93,7 @@ body {
     font-size: var(--titulo);
     text-shadow: 2px 2px 4px #000;
 }
-#video-section{
-    width: 100%;
 
-}
 #bio,
 #manifiesto,
 #tienda {
@@ -114,12 +103,24 @@ body {
 .main {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-end;
-    width: 100%;             /* Abarca todo el ancho de la ventana */
+    width: 100%;
     border-color: rgb(90, 224, 49);
-    border-width: 13px;
+    border-width: 4px;
     border-style: dashed;
+
+    
+    /* Imagen de fondo */
+    background-image: url(/assets/images/web\ template\ Fondo.png);
+    background-size: cover;
+
+    background-size: 200% 100%;
+    
+    /* Hace que la imagen cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
     background-repeat: no-repeat;
+    justify-content: center;
+    background-color: rgb(98, 23, 128);
 }
 
 /* .section-ppal{
@@ -135,33 +136,36 @@ body {
 .logo {
     max-width: 20vw;
 }
-
+/* 
 .container{
-    display: flex;            /* Define el hijo también como flex si necesitas distribuir contenido interno */
+    display: flex;            
     flex-wrap: wrap;
-    width: 100%;              /* Ocupa el 100% del ancho del padre */
-    height: 100%;             /* Ocupa el 100% del alto del padre */
-    max-width: 100%;
-    max-height: 100%;
-    /* Puedes añadir estilos adicionales al hijo aquí */
+    width: 100%;
     border-style: dotted;
-    border-color:rgb(7, 170, 135);  
+    border-color:rgb(131, 189, 176);  
     justify-content: center;
 
-}
+
+} */
 
 .container-modulo-centro{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
     /* background-image: url(../images/fondoWeb.jpg);
     background-size: cover; */
     border-style: dotted;
     border-color:rgb(10, 117, 240);  
     /* justify-content: center;
     justify-items: center; */
-    align-items: center;
-    min-width: 700px;
-    
+    justify-content: center;
+
+    /* min-width: 1000px;
+     */
+
+
+     
 }
 
 .container-modulo-aside{
@@ -172,9 +176,9 @@ body {
     justify-items: center;
     width: 15%;
 }
-
+/* 
 #tv-mueble{
-/* imagen mueble */
+imagen mueble
   align-self: center;
   object-fit: fill;
   width: 100%;
@@ -182,32 +186,64 @@ body {
   object-fit: cover;
 
 }
-
+   */
+ /*
 .container-mueble{
     display: flex;
     position: relative;
     justify-content: center;
     width: 80%;
     min-width: 700px;
-    /* max-width: 600p
-    x; */
+    max-width: 600p
+    x; 
     height: 35%;
     margin: 0 auto;
     border-color: rgb(14, 107, 2);
     border-width: 5px;
     border-style: solid;
 }
-
+*/
 .container-tv{
     display: flex;
+    flex-wrap: wrap;
     position: relative;
-    
-    width: 70%;
-    min-width: 700px;
-    /* max-width: 800px;     margin: 0 auto; */
+    justify-content: center;
+
     border-color: rgb(13, 14, 13);
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
+
+    /*padding-top:  10%;
+    position: relative;
+
+
+    width:98%;          50% del ancho de la ventana para escalabilidad 
+    height: 98%;         Ajuste automático de altura */
+  
+      width: 100%;          /* Ajusta el ancho al 80% del ancho de la pantalla para que sea responsive */
+      max-width: 600px;     /* Ancho máximo para evitar que crezca demasiado */
+      margin: auto;         /* Centra el contenedor en la pantalla */
+
+}
+.tv-image {
+    border-color: rgb(16, 221, 16);
+    border-width: 3px;
+    position: relative;
+    display: block;
+    width: 120%;
+
+    /* z-index: 2; */
+}
+.tv-video {
+    position: absolute;
+    top: 6%;
+    left: 11%;
+    width: 64%;
+    height: 31%;
+    border: none;
+    box-shadow: 0px -1px 10px 20px rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+    border-radius: 4%;
 }
 
 .aside{
@@ -218,24 +254,9 @@ body {
     width: 17%;
 }
 
-.tv-image {
-    width: 100%;
-    height: auto;
-    position: relative;
-    /* z-index: 2; */
-}
 
-.tv-video {
-    position: absolute;
-    top: 8%;
-    left: 7%;
-    width: 71%;
-    height: 83%;
-    border: none;
-    box-shadow: 0px -1px 10px 20px rgba(0, 0, 0, 0.6);
-    opacity: 0.8;
-    border-radius: 20%;
-}
+
+
 
 .footer {
     align-items: center;
