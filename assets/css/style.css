@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 :root {
     /* --primary-color: #eee;
     --secondary-color: #ddd;
@@ -11,24 +12,32 @@
     --titulo: 8vh;
 
 
+    
 }
 
 html,
 body {
+
     width: auto;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Permanent Marker', sans-serif;
 }
-
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -36,53 +45,54 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
     background-color: #04AA6D;
     color: white;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
     display: none;
-  }
+}
+
 .home-page {
+
     display: flex;
     flex-wrap: wrap;
-    background-color: #000;
+    /* Imagen de fondo */
+
+    background-image: url(/assets/images/web\ template\ Fondo.png);
+    background-size: 100% 100%;
+    /* Hace que la imagen cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+
+
     align-items: center;
     justify-content: center;
-    position: relative; /* Para posicionar elementos hijos */
+    position: relative;
+    /* Para posicionar elementos hijos */
     justify-items: center;
     width: 100%;
     height: 100%;
-    
-    font-family: Arial, sans-serif;
+
+    font-family: 'Permanent Marker', sans-serif;
     overflow-x: hidden;
 
     border-color: rgba(230, 4, 4, 0.829);
     border-width: 2px;
     border-style: dashed;
-
-
 }
-
-/* .superpuesta {
-    position: absolute;
-    top: 50%; /* Centra verticalmente */
-   /*  left: 50%; Centra horizontalmente */
-   /* transform: translate(-50%, -50%);  Ajusta la posición para centrar */
-    /* max-width: 50%;
-    max-height: 50%; 
-} */
 
 .nav-bar {
     display: flex;
@@ -147,137 +157,247 @@ body {
     border-width: 4px;
     border-style: dashed;
 
-    /* Imagen de fondo */
-    background-image: url(/assets/images/web\ template\ Fondo.png);
-    background-size: 100% 100%;
 
-    /* Hace que la imagen cubra todo el contenedor */
-    background-position: center;
-    /* Centra la imagen */
-    background-repeat: no-repeat;
     justify-content: center;
-    background-color: rgb(98, 23, 128);
+    /* background-color: rgb(98, 23, 128); */
 }
-
-/* .section-ppal{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    max-height: 100%;
-    border-style: dotted;
-    border-color:rgb(15, 15, 15);  
-
-} */
 
 .logo {
     max-width: 15%;
     min-width: 15%;
 }
-/* 
-.container{
-    display: flex;            
-    flex-wrap: wrap;
-    width: 100%;
-    border-style: dotted;
-    border-color:rgb(131, 189, 176);  
-    justify-content: center;
 
-
-} */
-
-.container-modulo-centro{
+.container-modulo-centro {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     width: 100%;
-
-    /* background-image: url(../images/fondoWeb.jpg);
-    background-size: cover; */
     border-style: dotted;
-    border-color:rgb(10, 117, 240);  
-    /* justify-content: center;
-    justify-items: center; */
+    border-color: rgb(10, 117, 240);
     justify-content: center;
-
-    /* min-width: 1000px;
-     */
-
-
-     
 }
 
-.container-modulo-aside{
+.container-modulo-aside {
     display: flex;
     border-style: dotted;
-    border-color:rgb(240, 10, 10);  
+    border-color: rgb(240, 10, 10);
     justify-content: center;
     justify-items: center;
     width: 100%;
 }
-/* 
-#tv-mueble{
-imagen mueble
-  align-self: center;
-  object-fit: fill;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 
-}
-   */
- /*
-.container-mueble{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    width: 80%;
-    min-width: 700px;
-    max-width: 600p
-    x; 
-    height: 35%;
-    margin: 0 auto;
-    border-color: rgb(14, 107, 2);
-    border-width: 5px;
-    border-style: solid;
-}
-*/
-.container-tv{
+.container-tv {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    justify-content: center;
-
+      
     border-color: rgb(13, 14, 13);
     border-width: 3px;
     border-style: solid;
-
-  
-      width: 100%;          /* Ajusta el ancho al 80% del ancho de la pantalla para que sea responsive */
-      max-width: 600px;     /* Ancho máximo para evitar que crezca demasiado */
-      margin: auto;         /* Centra el contenedor en la pantalla */
-
+    justify-content: center;
+    width: 100%;
+    /* Ajusta el ancho al 80% del ancho de la pantalla para que sea responsive */
+    max-width: 600px;
+    /* Ancho máximo para evitar que crezca demasiado */
+    
+    /* Centra el contenedor en la pantalla */
 }
+
 .tv-image {
+    
     border-color: rgb(16, 221, 16);
     border-width: 3px;
     position: relative;
-    display: block;
+    /* display: block; */
+    top: 15%;
     width: 120%;
-
-    /* z-index: 2; */
+    z-index: -1;
 }
+
 .tv-video {
     position: absolute;
-    top: 6%;
+    top: 21.5%;
     left: 11%;
     width: 64%;
-    height: 31%;
+    height: 32%;
     border: none;
     box-shadow: 0px -1px 10px 20px rgba(0, 0, 0, 0.6);
     opacity: 0.8;
     border-radius: 4%;
+    z-index: -2;
 }
 
-.aside{
+.btn-tienda {
+    display: block;
+    position: absolute;
+    background-image: url(/assets/images/pngegg.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+
+    width: 35%;
+    height: 35%;
+    
+    top: 35%;
+    left: 70%;
+
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+
+
+    font-family: 'Permanent Marker', sans-serif;
+    /* padding: 10px 20px; */
+    background-color:transparent;
+
+
+    color: rgb(10, 10, 10);
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1200%;
+    transition: background-color 0.3s;
+
+}
+   /* Ajuste manual del texto */
+   .btn-tienda .texto {
+    position: relative;
+    top:1%; /* Ajuste vertical */
+    left: 32%;  /* Ajuste horizontal */
+ /*   padding: 5px 10px;  Ajuste del espacio interno */
+    margin: 0; /* Ajuste del espacio exterior */
+    font-size: 50%; /* Tamaño del texto */
+    line-height: 1; /* Ajuste de la altura de línea */
+}
+
+.btn-tienda:hover {
+    /* background-color: #0056b3; */
+    animation: sacudida 0.5s ease;
+    /* backdrop-filter: blur(4px); */
+}
+.btn-contacto {
+    display: block;
+    position: absolute;
+    background-image: url(/assets/images/cassettera.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+
+    width: 60%;
+    height: 45%;
+    
+    top: 59%;
+    left: 19.5%;
+
+
+    justify-content: center;
+    justify-items: center;
+
+
+
+    font-family: 'Permanent Marker', sans-serif;
+    /* padding: 10px 20px; */
+    background-color:transparent;
+
+
+    color: rgb(5, 5, 5);
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12%;
+    transition: background-color 0.3s;
+
+}
+   /* Ajuste manual del texto */
+   .btn-contacto .texto {
+    position: relative;
+    top:23%; /* Ajuste vertical */
+    left: 32%;  /* Ajuste horizontal */
+ /*   padding: 5px 10px;  Ajuste del espacio interno */
+    margin: 0; /* Ajuste del espacio exterior */
+    font-size: 50%; /* Tamaño del texto */
+    line-height: 1; /* Ajuste de la altura de línea */
+}
+
+.btn-contacto:hover {
+    /* background-color: #0056b3; */
+    animation: sacudida 0.5s ease;
+    /* backdrop-filter: blur(4px); */
+}
+   /* Definimos la animación de sacudida */
+
+
+   .btn-manifiesto {
+    display: block;
+    position: absolute;
+    background-image: url(/assets/images/manifiesto.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+
+    width: 45%;
+    height: 45%;
+    
+    top: 1%;
+    left: 90%;
+
+
+    justify-content: center;
+    justify-items: center;
+
+
+    
+    font-family: 'Permanent Marker', sans-serif;
+    /* padding: 10px 20px; */
+    background-color:transparent;
+
+
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font: weight bold;
+    text-decoration: none;
+    border-radius: 12%;
+    transition: background-color 0.3s;
+
+}
+   /* Ajuste manual del texto */
+   .btn-manifiesto .texto {
+    display: inline-block;
+    position: relative;
+    top:33%; /* Ajuste vertical */
+    left: 11%;  /* Ajuste horizontal */
+ /*   padding: 5px 10px;  Ajuste del espacio interno */
+    margin: 0; /* Ajuste del espacio exterior */
+    font-size: 40%; /* Tamaño del texto */
+    line-height: 1; /* Ajuste de la altura de línea */
+    transform: rotate(45deg); /* Gira el texto 45 grados */
+}
+
+.btn-manifiesto:hover {
+    /* background-color: #0056b3; */
+    animation: sacudida 0.5s ease;
+    /* backdrop-filter: blur(4px); */
+}
+   
+   @keyframes sacudida {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+.casettera-image{
+    position: absolute;
+    width: 45%;
+    z-index: 0;
+    top: 61%;
+    left: 27%;
+}
+.aside {
     display: flex;
     border-color: rgb(230, 5, 5);
     border-width: 2px;
@@ -286,17 +406,14 @@ imagen mueble
 
 }
 
-
-
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--back-mobile);
- 
+    background-color: transparent;
     width: 100%;
-    height:150px;
-
+    height: 150px;
 
     border-color: rgb(7, 7, 7);
     border-width: 2px;
@@ -321,4 +438,4 @@ imagen mueble
 
 .footer p {
     margin-top: 10px;
-}
+} 
