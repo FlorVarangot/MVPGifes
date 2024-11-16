@@ -3,6 +3,14 @@
 /* Media Queries para tablet */
 @media screen and (max-width: 600px) {
     /* Estilos para tablets y dispositivos más grandes */
+    .main{
+
+      flex-direction: column-reverse;
+    }
+    #aside-left{
+
+      display: none;
+    }
 
 }
 /* Media Queries para tablet */

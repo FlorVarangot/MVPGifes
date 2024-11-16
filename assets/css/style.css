@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 :root {
-    /* --primary-color: #eee;
+    --primary-color: #eee;
     --secondary-color: #ddd;
-    --third-color: #fff; */
+    --third-color: #ff6699;
     --back-mobile: #fdc82a;
     --back-color: linear-gradient(135deg, #fdc82a, #ff6699);
     /* --background-alternativo: ; */
@@ -70,7 +70,7 @@ body {
     flex-wrap: wrap;
     /* Imagen de fondo */
 
-    background-image: url(/assets/images/web\ template\ Fondo.png);
+    background-image: url(/assets/images/web\ template\ Fondo2.png);
     background-size: 100% 100%;
     /* Hace que la imagen cubra todo el contenedor */
     background-position: center;
@@ -149,28 +149,26 @@ body {
 }
 
 .main {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
-    width: 100%;
-
+    width: 100%;     
     border-color: rgb(90, 224, 49);
     border-width: 4px;
     border-style: dashed;
+    max-width: 1000px;
 
-
-    justify-content: center;
-    /* background-color: rgb(98, 23, 128); */
 }
 
 .logo {
-    max-width: 15%;
-    min-width: 15%;
+    max-width: 200px;
+    min-width: 150px;
 }
 
 .container-modulo-centro {
     display: flex;
-    flex-wrap: wrap;    
-    width: 100%;
+    /* flex-wrap: wrap;     */
+    flex:1;
+    height: 70%;
     border-style: dotted;
     border-color: rgb(10, 117, 240);
     justify-content: center;
@@ -178,16 +176,15 @@ body {
 
 .container-modulo-aside {
     display: flex;
+    flex: 0.3;
+    flex-wrap: wrap; 
     border-style: dotted;
     border-color: rgb(240, 10, 10);
     justify-content: center;
-    justify-items: center;
-    width: 100%;
 }
 
 .container-tv {
     display: flex;
-    flex-wrap: wrap;
     position: relative;
       
     border-color: rgb(13, 14, 13);
@@ -235,10 +232,10 @@ body {
     background-position: center;
     z-index: 2;
 
-    width: 35%;
-    height: 35%;
+    width: 30%;
+    height: 30%;
     
-    top: 35%;
+    top: 39%;
     left: 70%;
 
     align-self: center;
@@ -263,11 +260,11 @@ body {
    /* Ajuste manual del texto */
    .btn-tienda .texto {
     position: relative;
-    top:1%; /* Ajuste vertical */
+    top:0%; /* Ajuste vertical */
     left: 32%;  /* Ajuste horizontal */
  /*   padding: 5px 10px;  Ajuste del espacio interno */
     margin: 0; /* Ajuste del espacio exterior */
-    font-size: 50%; /* Tamaño del texto */
+    font-size: 35%; /* Tamaño del texto */
     line-height: 1; /* Ajuste de la altura de línea */
 }
 
@@ -331,47 +328,45 @@ body {
 
    .btn-manifiesto {
     display: block;
-    position: absolute;
+    position: relative;
+
     background-image: url(/assets/images/manifiesto.png);
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
+
     z-index: 2;
-
-    width: 45%;
-    height: 45%;
-    
-    top: 1%;
-    left: 90%;
-
-
-    justify-content: center;
-    justify-items: center;
-
-
+    width: 100%;
+    height: 30%;
     
     font-family: 'Permanent Marker', sans-serif;
     /* padding: 10px 20px; */
     background-color:transparent;
 
 
-    color: rgb(0, 0, 0);
-    font-size: 60px;
-    font: weight bold;
-    text-decoration: none;
-    border-radius: 12%;
+    border-color: rgb(12, 12, 12);
+    border-width: 2px;
+    border-style: solid;
+
+
     transition: background-color 0.3s;
 
 }
    /* Ajuste manual del texto */
    .btn-manifiesto .texto {
+
+    color: rgb(0, 0, 0);
+    /* font-size: 60px;
+    font: weight bold;
+    text-decoration: none; */
+
     display: inline-block;
     position: relative;
-    top:33%; /* Ajuste vertical */
-    left: 11%;  /* Ajuste horizontal */
+    top:42%; /* Ajuste vertical */
+    left: 0%;  /* Ajuste horizontal */
  /*   padding: 5px 10px;  Ajuste del espacio interno */
     margin: 0; /* Ajuste del espacio exterior */
-    font-size: 40%; /* Tamaño del texto */
+    font-size: 130%; /* Tamaño del texto */
     line-height: 1; /* Ajuste de la altura de línea */
     transform: rotate(45deg); /* Gira el texto 45 grados */
 }
@@ -397,16 +392,91 @@ body {
     top: 61%;
     left: 27%;
 }
-.aside {
+
+
+.footer{
+
+    background-color:transparent;
+  }
+  
+  .container-footer{
     display: flex;
-    border-color: rgb(230, 5, 5);
-    border-width: 2px;
+    flex-wrap: wrap;
+    width: 100vw;
+
+    border-color: rgb(230, 233, 37);
+    border-width: 1px;
     border-style: solid;
+
+  }
+  #caja-footer{
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-top: 1%;
+    /* border-color: rgb(23, 25, 156);
+    border-width: 1px;
+    border-style: solid; */
+    margin-bottom: 0px;
+  }
+  /* #maps-google{
+    
+    width: 70%;
+    height: 400px;
+    border-color: rgb(13, 13, 14);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10%;
+    padding: 5px;
+    padding-bottom: 10px;
+  } */
+  #caja-footer h2 {
+    font-size: 130%;
+    color:rgb(14, 13, 13);
+    background-color: #fdc82a;
+    width: 100%;
+    text-align:  center;
+  }
+  #caja-footer ul, li,a{
+  
+    list-style-type: none;
+    color: rgb(7, 7, 7);
 
+
+  }  #caja-footer p{
+    text-align: center;
+    font-size: 0.9em;
+  }
+  /* #logo-footer{
+    width: 10%;
+    border-radius:1%;
+    padding: 4px;
+  } */
+   #redes{
+    background-color: var(--back-mobile);
+    /* border-color: rgb(12, 12, 12);
+    border-width: 1px;
+    border-style: solid; */
+
+  }
+  #redes-list i{
+    padding: 1px; /* Espacio interno dentro de cada elemento */
+    margin-bottom: 1px;
+    font-size: 2em; /* 1.5 veces el tamaño de fuente del elemento padre*/ 
+    margin-right: 40px;
+    color:#000;
+  } 
+
+  .line-separator {
+    border: none;
+    border-top: 1px solid #0e0e0d; /* Color y grosor de la línea 
+    width: 80%; /* Ancho de la línea */
+    margin: 0px auto; /* Espacio y centrado */
 }
-
-.footer {
+/* .footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -438,4 +508,4 @@ body {
 
 .footer p {
     margin-top: 10px;
-} 
+}  */
