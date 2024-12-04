@@ -1,7 +1,6 @@
 
-/* Estilos para celulares en modo vertical */
- @media (min-width: 300px) and (orientation: portrait) {
-
+    /* Estilos para celulares en modo vertical */
+ @media (min-width: 300px) and (max-width:428px) and (orientation: portrait) {
     .container-tv{
         height: 60%;
     }
@@ -15,10 +14,23 @@
         width: 71%;
         height: 37%;
     }
-} 
-    /* Estilos para celulares en modo horizontal */
-@media (min-width: 300px) and (max-width: 915px) and (orientation: landscape) {
 
+    .logo{
+        font-size: var(--font-mini);
+        top:56.9%;
+    }
+    
+    .logo-ig{
+        top:68.4%;
+    }
+    
+    .mail-info {
+        top:81.5%;
+    }
+}  
+
+    /* Estilos para celulares en modo horizontal */
+@media (min-width: 568px) and (orientation: landscape) {
     .container-tv{
         height: 100vh;
     }
@@ -33,12 +45,25 @@
         height: 70%;
     }
 
+    .logo{
+        font-size: 0.6rem;
+        top:91%;
+        left:14%;
+    }
+    
+    .logo-ig{
+        left:48%;
+    }
+    
+    .mail-info {
+       left:73%;
+    }
 }
-    /* Estilos para tabletas en modo vertical */
-@media (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
 
+    /* Estilos para tabletas en modo vertical */
+@media (min-width: 569px) and (orientation: portrait) {
     .container-tv{
-        height: 75%;
+        height: 90%;
     }
     .tv-image {
         width: 100%;
@@ -50,29 +75,23 @@
         width: 70%;
         height: 37%;
     }
-
+    
+    .logo{
+        font-size: 1.9rem;
+        top:56.8%;
+    }
+    
+    .logo-ig{
+        top:68%;
+    }
+    
+    .mail-info {
+        top:81.2%;
+    }
 }
-    /* Estilos para tabletas en modo horizontal */
-@media (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
-    /* Estilos para celulares en modo horizontal */
-    .container-tv{
-        height: 100vh;
-    }
-    .tv-image {
-        width: 100%;
-        content:url("/assets/images/web\ template\ Tele\ sola.png");
-    }
-    .tv-video {
-        top: 11%;
-        left: 6%;
-        width: 72%;
-        height: 69%;
-    }
 
-} 
-    /* Estilos para computadoras en modo vertical */
-@media (min-width: 1025px){
-
+    /* Estilos para tablet horizontal y computadoras */
+@media (min-width: 1024px){
     .container-tv{
         height: 100%;
     }
@@ -82,10 +101,23 @@
     }
     .tv-video {
         position: absolute;
-        top: 11%;
+        top: 10%;
         left: 6.5%;
         width: 72%;
         height: 69%;
     }
 
+    .logo{
+        top: 91%;
+        left: 14.5%;
+        font-size: var(--font-gral);
+    }
+    
+    .logo-ig{
+        left:48%;
+    }
+    
+    .mail-info {
+        left: 72%;
+    }
 }

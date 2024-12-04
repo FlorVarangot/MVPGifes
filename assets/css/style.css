@@ -5,77 +5,81 @@
     --third-color: #ff6699;
     --back-mobile: #fdc82a;
     --back-color: linear-gradient(135deg, #fdc82a, #ff6699);
-    /* --background-alternativo: ; */
-    --font-gral: 3vh;
-    --font-dos: 2vh;
-    --font-mini: 1vh;
+    --font-gral: 1.5rem;
+    --font-dos: 1rem;
+    --font-mini: 0.8rem;
     --titulo: 8vh;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 html,
 body {
-
-    /* width: 100vw;
-    height: 100vh; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Permanent Marker', sans-serif;
 }
+
 .permanent-marker-regular {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
-  }
+}
   
 
 .body{
-/* BODY */
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-    /* Imagen de fondo */
     background-image: url(/assets/images/FondoCompleto.jpeg);
-
-    /* Hace que la imagen cubra todo el contenedor */
     background-position: center;
-    /* Centra la imagen */
     background-repeat: no-repeat;
     background-size: cover;
-    
-
     align-items: center;
     justify-content: center;
     position: relative;
-    /* Para posicionar elementos hijos */
     justify-items: center;
-
-    /* height: 100vh; */
     font-family: 'Permanent Marker', sans-serif;
     overflow-x: hidden;
 
-    border-color: rgba(230, 4, 4, 0.829);
+    /* border-color: rgba(230, 4, 4, 0.829);
     border-width: 2px;
-    border-style: dashed;
+    border-style: dashed; */
 }
+
 .main {
     display: flex;
     height: 98vh;
-    border-color: rgb(90, 224, 49);
-    border-width: 4px;
-    border-style: dashed;
     justify-content: center;
     align-items: center;
+    
+    /* border-color: rgb(90, 224, 49);
+    border-width: 4px;
+    border-style: dashed; */
 }
 
 .container-tv {
     display: flex;
     position: relative;
-    border-color: rgb(228, 243, 20);
-    border-width: 3px;
-    border-style: solid;
     justify-items: center;
     justify-content: center;
+    color: var(--secondary-color);
+    max-width: 100vw;
+
+    /* border-color: rgb(228, 243, 20);
+    border-width: 3px;
+    border-style: solid; */
+}
+
+.logo{
+    position: absolute;
+    z-index: 2;
+    font-size: var(--font-gral);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .tv-image {
@@ -83,25 +87,17 @@ body {
     width: 100%;
     height: 100%;
     justify-items: center;
-
     pointer-events: none;
     z-index: 1;
- 
 }
+
 .tv-video {
     position: absolute;
-    top: 15%;
-    left: 6.5%;
-    width: 70%;
-    height: 45%;
     border: none;
-    box-shadow: 0px -1px 10px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px -1px 8px 10px rgba(0, 0, 0, 0.6);
     opacity: 0.8;
     border-radius: 4%;
-
     z-index: 0;
-    pointer-events: auto; /* Asegura que pueda recibir clics */
-    cursor: pointer; /* Indica al usuario que es clicable */
 }
 
 
