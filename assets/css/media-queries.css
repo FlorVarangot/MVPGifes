@@ -1,5 +1,26 @@
+/* Estilos para dispositivos muy pequeños */
+@media (max-width:300px){
+    .container-tv{
+        height: 90%;
+    }
+    .tv-image {
+        width: 100%;
+        content:url("/assets/images/web\ template\ Tele\ sola.png");
+    }
+    .tv-video {
+        top: 9%;
+        left: 8%;
+        width: 69%;
+        height: 69%;
+    }
 
-    /* Estilos para celulares en modo vertical */
+    .logo{
+     display:none;
+    }
+    
+}
+
+/* Estilos para celulares en modo vertical */
  @media (min-width: 300px) and (max-width:428px) and (orientation: portrait) {
     .container-tv{
         height: 60%;
