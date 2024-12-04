@@ -1,31 +1,23 @@
 
+/* Estilos para celulares en modo vertical */
+ @media (min-width: 300px) and (orientation: portrait) {
 
-/* Media Queries para tablet */
-@media screen and (max-width: 600px) {
-    /* Estilos para tablets y dispositivos más grandes */
-
-}
-/* Media Queries para tablet */
-@media screen and (min-width: 768px) {
-    /* Estilos para tablets y dispositivos más grandes */
-
-}
-/* Media Queries para laptop Macbook */
-@media screen and (min-width: 1280px) {
-
-    .container-tv {
-        width: 80%;
-        
+    .container-tv{
+        height: 60%;
     }
-}
-
-/* Media Queries para laptop y pc */
-@media screen and (min-width: 1440px) {
-
-    
-}
-/* Dispositivos móviles en posición horizontal (landscape) */
-@media (min-width: 480px) and (max-width: 1024px) and (orientation: landscape) {
+    .tv-image {
+        width: 100%;
+        content:url("/assets/images/web\ template\ Tele\ 1024px-RECORTEBORDES.png");
+    }
+    .tv-video {
+        top: 5%;
+        left: 6%;
+        width: 71%;
+        height: 37%;
+    }
+} 
+    /* Estilos para celulares en modo horizontal */
+@media (min-width: 300px) and (max-width: 915px) and (orientation: landscape) {
 
     .container-tv{
         height: 100vh;
@@ -35,17 +27,65 @@
         content:url("/assets/images/web\ template\ Tele\ sola.png");
     }
     .tv-video {
-        position: absolute;
-        top: 15%;
-        left: 6.5%;
-        width: 70%;
-        height: 60%;
-        border: none;
-        box-shadow: 0px -1px 10px 20px rgba(0, 0, 0, 0.6);
-        opacity: 0.8;
-        border-radius: 4%;
-        z-index: -2;
+        top: 9%;
+        left: 6%;
+        width: 72%;
+        height: 70%;
     }
 
+}
+    /* Estilos para tabletas en modo vertical */
+@media (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
+
+    .container-tv{
+        height: 75%;
+    }
+    .tv-image {
+        width: 100%;
+        content:url("/assets/images/web\ template\ Tele\ 1024px-RECORTEBORDES.png");
+    }
+    .tv-video {
+        top: 5%;
+        left: 7%;
+        width: 70%;
+        height: 37%;
+    }
+
+}
+    /* Estilos para tabletas en modo horizontal */
+@media (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Estilos para celulares en modo horizontal */
+    .container-tv{
+        height: 100vh;
+    }
+    .tv-image {
+        width: 100%;
+        content:url("/assets/images/web\ template\ Tele\ sola.png");
+    }
+    .tv-video {
+        top: 11%;
+        left: 6%;
+        width: 72%;
+        height: 69%;
+    }
+
+} 
+    /* Estilos para computadoras en modo vertical */
+@media (min-width: 1025px){
+
+    .container-tv{
+        height: 100%;
+    }
+    .tv-image {
+        width: 100%;
+        content:url("/assets/images/web\ template\ Tele\ sola.png");
+    }
+    .tv-video {
+        position: absolute;
+        top: 11%;
+        left: 6.5%;
+        width: 72%;
+        height: 69%;
+    }
 
 }
