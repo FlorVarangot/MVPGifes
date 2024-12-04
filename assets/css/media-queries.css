@@ -1,4 +1,4 @@
-/* Estilos para dispositivos muy pequeños */
+    /* Estilos para dispositivos muy pequeños */
 @media (max-width:300px){
     .container-tv{
         height: 90%;
@@ -20,10 +20,10 @@
     
 }
 
-/* Estilos para celulares en modo vertical */
- @media (min-width: 300px) and (max-width:428px) and (orientation: portrait) {
+    /* Estilos para celulares en modo vertical */
+ @media (min-width: 300px) and (orientation: portrait) {
     .container-tv{
-        height: 60%;
+        height: 65%;
     }
     .tv-image {
         width: 100%;
@@ -48,7 +48,7 @@
     .mail-info {
         top:81.5%;
     }
-}  
+}
 
     /* Estilos para celulares en modo horizontal */
 @media (min-width: 568px) and (orientation: landscape) {
