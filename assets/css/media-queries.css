@@ -21,7 +21,7 @@
 }
 
     /* Estilos para celulares en modo vertical */
- @media (min-width: 300px) and (orientation: portrait) {
+ @media (min-width: 300px){
     .container-tv{
         height: 65%;
     }
